@@ -9,7 +9,7 @@
 //اضافة الكود الخاصب  بي بحث search
 <resources>
 <string name="app_name">Github Query</string>
-<!--DODO (1) Add a string resource called search with the titles="Search"
+<!--DODO (1) Add a string resource called search with the title "Search"-->
 <string name="search">Search</string>
 </resources>
 
@@ -70,7 +70,7 @@ if(menuItemThatWasSelected == R.id.action_search) {
 //بكتابة هذا
 Contest contest = MainActivity.this;
 string message = "Search clicked";
-Toast.makeText(context,message,Toast.LENGTH_LONG).show();
+Toast.makeText(context,message,Toast.LENGTH_LONG).show()-->
 
 // تاكد من استدعاء show قبل العرض
 
