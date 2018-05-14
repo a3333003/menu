@@ -30,7 +30,55 @@
 // سوف نقوم بتغير الفيمة الى (orderIncategory="1")
 menu xmlns:android="http://test.a3333003.com"
 <item
+//لعمل عنوان للقائمة
+android:title="@string/search"
 android:orderInCategry="1"
+// لعمل زر اكشن في القائمة ندخل هذا 
+app:showAsAction="ifRoom".
 android:id="@+id/action_search" />
 </menu>
 
+
+//---------
+//app/java/com.example.android/utilities/MainActvity.java
+-----
+//سنقوم اولا بتجاوز onCreateOptionsMenu
+// 
+@Override
+public boolean onCreateOptionsMenu(Menu menu) {
+getMenuInflater().inflate(R.menu.main,menu);
+return true;
+}
+@Override
+public boolean onCreateOptionsItemSelected(MenuItem item) {
+return super.onOptionsItemSelected(item);
+}
+
+
+---------
+//app/java/com.example.android/utilities/MainActvity.java
+//-------
+//Toast عمل محافظة للرسالة التي لم يتم ارسالها او تحريرها عند الخروج او التنقل لتطبيق اخر
+//Toast (او مثل رسالة تم الخروج منها قبل عمل ارسال لها يؤدي الى تشغليها))popup() هي قائمة منبثقة للاسفل تفاعلية
+//سوف نقوم باضافة المعرف  id
+//و تصبح القائمة بهذا الشكل 
+@Override
+public boolean onCreateOptionsItemSelected(MenuItem item) {
+int menuItemThatWasSelected = item.getItemId();
+if(menuItemThatWasSelected == R.id.action_search) {
+//اذا كان هذي الليست  خاصة بي البحث سوف اقوم باظهار عنصر toast
+//بكتابة هذا
+Contest contest = MainActivity.this;
+string message = "Search clicked";
+Toast.makeText(context,message,Toast.LENGTH_LONG).show();
+
+// تاكد من استدعاء show قبل العرض
+
+
+
+
+
+
+//
+//
+//
