@@ -1,0 +1,36 @@
+//الدرس الثاني/ 
+//التمرين السابع
+
+//اولا نختار الملف //strings.xml
+//عبر الرابط 
+// app/res/valuse اختيار 
+//فتح الملف
+
+//اضافة الكود الخاصب  بي بحث search
+<resources>
+<string name="app_name">Github Query</string>
+<!--DODO (1) Add a string resource called search with the titles="Search"
+<string name="search">Search</string>
+</resources>
+
+
+//-------------------------------
+
+// لعمل قائمة
+//الضغط بي الزر الايمن على res 
+//new -- Android resource directory اختيار
+//res/menu
+//---------------------------
+// تحويل القيمة resource type الى Menu ---  و اختيار ok
+//سوف يظهر  سمة مجلد باسم menu --
+// الضغط بي الزر الايمن على menu
+// و اختيار new --- 
+// Menu resource file 
+//فتح main.xml
+// سوف نقوم بتغير الفيمة الى (orderIncategory="1")
+menu xmlns:android="http://test.a3333003.com"
+<item
+android:orderInCategry="1"
+android:id="@+id/action_search" />
+</menu>
+
